@@ -12,7 +12,8 @@ btn.addEventListener('click', function () {
 });
 
 function addTask() {
-    tasks.push(task.value)
+    tasks.unshift(task.value)
+    console.log(tasks)
     task.value = "";
     list.innerHTML = ""
     for (let i = 0; i < tasks.length; i++) {
