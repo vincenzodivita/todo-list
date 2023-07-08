@@ -7,7 +7,7 @@ btn.addEventListener('click', function () {
         list.innerHTML += "<li>" + task.value + "</li>";
         task.value = "";
     } else {
-        alert("Task can't be")
+        alert("Task can't be empty")
     }
 });
 
