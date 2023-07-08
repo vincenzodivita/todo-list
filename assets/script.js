@@ -4,6 +4,7 @@ const task = document.querySelector('input');
 
 btn.addEventListener('click', function () {
     list.innerHTML += "<li>" + task.value + "</li>";
+    task.value = "";
 });
 
 
