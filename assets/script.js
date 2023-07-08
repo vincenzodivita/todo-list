@@ -7,7 +7,7 @@ btn.addEventListener('click', function () {
         list.innerHTML += "<li>" + task.value + "</li>";
         task.value = "";
     } else {
-        alert("ciao")
+        alert("Task can't be")
     }
 });
 
