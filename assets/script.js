@@ -4,11 +4,15 @@ const task = document.querySelector('input');
 
 btn.addEventListener('click', function () {
     if (task.value != "") {
-        list.innerHTML += "<li>" + task.value + "</li>";
-        task.value = "";
+        addTask()
     } else {
         alert("Task can't be empty")
     }
 });
+
+function addTask() {
+    list.innerHTML += "<li>" + task.value + "</li>";
+    task.value = "";
+}
 
 
