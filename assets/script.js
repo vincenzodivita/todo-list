@@ -1,1 +1,3 @@
-document.getElementById('app').innerHTML = 'Hello from JS'
+document.querySelector('button').addEventListener('click', function () {
+    document.getElementById('app').innerHTML = 'Hello from JS';
+});
