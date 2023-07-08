@@ -11,7 +11,7 @@ btn.addEventListener('click', function () {
 });
 
 function addTask() {
-    list.innerHTML += "<li>" + task.value + "</li>";
+    list.innerHTML += `<li>${task.value}</li>`;
     task.value = "";
 }
 
