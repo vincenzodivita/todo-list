@@ -12,10 +12,13 @@ btn.addEventListener('click', function () {
 });
 
 function addTask() {
-    list.innerHTML += `<li>${task.value}</li>`;
     tasks.push(task.value)
     task.value = "";
-    console.log(tasks)
+    list.innerHTML = ""
+    for (let i = 0; i < tasks.length; i++) {
+        list.innerHTML += `<li>${tasks[i]}</li>`;
+    }
 }
+
 
 
