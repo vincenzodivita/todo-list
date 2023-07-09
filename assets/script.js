@@ -1,9 +1,9 @@
-const btn = document.querySelector('button');
+const addBtn = document.getElementById('add-btn');
 const list = document.getElementById('app');
 const task = document.querySelector('input');
 const tasks = [];
 
-btn.addEventListener('click', function () {
+addBtn.addEventListener('click', function () {
     if (task.value != "") {
         addTask()
     } else {
